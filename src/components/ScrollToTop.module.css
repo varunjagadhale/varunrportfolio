@@ -1,0 +1,33 @@
+.scrollBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 46px;
+  height: 46px;
+  background-color: var(--accent-primary);
+  color: var(--bg-primary);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.3);
+  cursor: pointer;
+  z-index: 99;
+  outline: none;
+  transition: background-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.scrollBtn:hover {
+  background-color: var(--text-primary);
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.3);
+}
+
+@media (max-width: 768px) {
+  .scrollBtn {
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+}
